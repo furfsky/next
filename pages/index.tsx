@@ -1,20 +1,22 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import logo from "../public/logos/logo.gif"
+import logo from "../public/logos/logo.gif";
 
 export default function Home() {
   return (
     <main className={styles.container}>
       <header className={styles.hero}>
-        <Image id="logo" src={logo} alt="logo" />
-        <h1 id="headerSubtitle">and now...</h1>
-        <div className="downloadButtons">
+        <section className={styles.header}>
+          <Image id="logo" src={logo} alt="logo" />
+          <h1 id={styles.headerSubtitle}>and now...</h1>
+        </section>
+        <section className={styles.downloads}>
           <a
             href="files/v1.3.1/§r§lFurfSky §6§lReborn §8§lFL §8§l[§71.3.1§8§l].zip"
             download
           >
-            <div className="downloadButton">
+            <div className={styles.downloadButton}>
               <p id="fullLink">v1.3.1 Latest (Full)</p>
             </div>
           </a>
@@ -22,7 +24,7 @@ export default function Home() {
             href="files/v1.3.1/§r§lFurfSky §6§lReborn §8§lOV+ §8§l[§71.3.1§8§l].zip"
             download
           >
-            <div className="downloadButton">
+            <div className={styles.downloadButton}>
               <p id="overlayPlusLink">v1.3.1 Latest (Overlay+)</p>
             </div>
           </a>
@@ -30,11 +32,11 @@ export default function Home() {
             href="files/v1.3.1/§r§lFurfSky §6§lReborn §8§lOV §8§l[§71.3.1§8§l].zip"
             download
           >
-            <div className="downloadButton">
+            <div className={styles.downloadButton}>
               <p id="overlayLink">v1.3.1 Latest (Overlay)</p>
             </div>
           </a>
-        </div>
+        </section>
       </header>
       <div className={styles.social}>
         {/* Save SVGS as files. */}
@@ -97,10 +99,7 @@ export default function Home() {
               />
             </clipPath>
             <g clipPath="url(#p.0)">
-              <path
-                fillOpacity="0.0"
-                d="m0 0l300.0 0l0 300.0l-300.0 0z"
-              ></path>
+              <path fillOpacity="0.0" d="m0 0l300.0 0l0 300.0l-300.0 0z"></path>
               <path d="m200.30382 214.91277l-23.338593 30.708664l0 -48.37796z"></path>
               <path d="m192.73875 92.679695l0 0c-11.428375 -3.0614853 -16.102951 -22.64814 -10.440933 -43.748028c5.6620026 -21.099888 19.516495 -35.722904 30.94487 -32.66142l0 0c-12.520386 22.65128 -20.003632 50.538177 -20.503937 76.40945z"></path>
               <path d="m177.01695 209.82333l0 21.070862l17.669296 -21.070862z"></path>
