@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+.hero {
+  flex: 9;
+}
+.socials {
+  flex: 1;
+}
