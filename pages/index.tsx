@@ -8,8 +8,12 @@ export default function Home() {
     <main className={styles.container}>
       <header className={styles.hero}>
         <section className={styles.header}>
-          <Image id="logo" src={logo} alt="logo" />
-          <h1 id={styles.headerSubtitle}>and now...</h1>
+          <div className={styles.logo}>
+            {/* Styles apply onto inner image. */}
+            <Image src={logo} alt="logo" /> 
+          </div>
+
+          <h1 className={styles.headerSubtitle}>and now...</h1>
         </section>
         <section className={styles.downloads}>
           <a
