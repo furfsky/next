@@ -1,5 +1,3 @@
-@use "colors.scss" as *;
-
 .button {
   color: white;
   display: flex;
@@ -10,8 +8,8 @@
 
   background: #2c354d;
   border: 0.25rem solid #000000;
-  box-shadow: inset -0.25rem -0.25rem 0px $furf-background-dark,
-    inset 0.25rem 0.25rem 0px $furf-background;
+  box-shadow: inset -0.25rem -0.25rem 0px var(--furf-background-dark),
+    inset 0.25rem 0.25rem 0px var(--furf-background);
 
   /* Inside Auto Layout */
   flex: none;
@@ -19,5 +17,5 @@
   flex-grow: 0;
 }
 .button:hover {
-    border: 0.25rem solid $furf-gold;
+    border: 0.25rem solid var(--furf-gold);
 }
