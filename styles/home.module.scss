@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: linear-gradient(#00000000 0%, #1c1d31 90%),
+    url(../public/banner.png) no-repeat;
+  background-size: cover;
 }
 
 .hero {
@@ -16,10 +19,9 @@
   flex: 1;
 }
 
-
 .header {
   flex: 1;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -32,7 +34,6 @@
   flex: 1;
   margin-top: 3rem;
 }
-
 
 .downloads {
   flex: 1;

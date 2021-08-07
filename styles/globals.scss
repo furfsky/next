@@ -1,6 +1,8 @@
+
 html,
 body,
-#__next { /* Including __next here is a bit hacky but it works. */
+#__next {
+  /* Including __next here is a bit hacky but it works. */
   min-height: 100vh;
   padding: 0;
   margin: 0;
