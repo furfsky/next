@@ -1,5 +1,3 @@
-@use "colors.scss" as *;
-
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -9,10 +7,10 @@
   //   position: fixed;
   height: 3rem;
   width: 100%;
-  background: $furf-background-dark;
+  background: var(--furf-background-dark);
 }
 .item {
-  font-weight: bold;
+  font-weight: 700;
   color: white;
   display: flex;
   flex-direction: column;
