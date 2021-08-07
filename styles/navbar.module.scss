@@ -1,0 +1,22 @@
+@use "colors.scss" as *;
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  //   position: fixed;
+  height: 3rem;
+  width: 100%;
+  background: $furf-background-dark;
+}
+.item {
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
