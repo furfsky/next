@@ -1,4 +1,6 @@
-.button {
+import styled from "styled-components";
+
+export const Button = styled.button`
   color: white;
   display: flex;
   flex-direction: row;
@@ -9,14 +11,17 @@
   background: #2c354d;
   border: 0.2rem solid #000000;
   box-shadow: inset -0.25rem -0.25rem 0px var(--furf-background-dark),
-    inset 0.25rem 0.25rem 0px var(--furf-background);
+  inset 0.25rem 0.25rem 0px var(--furf-background);
 
   /* Inside Auto Layout */
   flex: none;
   order: 1;
   flex-grow: 0;
-}
-
-.button:hover {
-  border: 0.2rem solid var(--furf-gold);
-}
+  
+  cursor: pointer;
+  
+  &:hover {
+    border-color: var(--furf-orange);
+    color: var(--furf-gold);
+  }
+`;
