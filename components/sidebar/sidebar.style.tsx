@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SidebarWrapper = styled.div`
+const SidebarWrapper = styled.div`
   min-height: calc(100vh - var(--navbar-height));
   background: rgba(28, 29, 48, 0.5);
   min-width: 40rem;
@@ -12,3 +12,5 @@ export const SidebarWrapper = styled.div`
   
   padding: 3.2rem;
 `;
+
+export default SidebarWrapper;

@@ -1,7 +1,11 @@
 import React from "react";
-type SubtitleCollection = React.ReactElement[]
 
-const Quote: React.FC<{author: string | React.ReactElement}> = ({author, children}) => (
+type SubtitleCollection = React.ReactElement[]
+type QuoteProps = {
+  author: string | React.ReactElement;
+}
+
+const Quote: React.FC<QuoteProps> = ({author, children}) => (
   <>
     {'"'}{children}{'"'}
     <br/>

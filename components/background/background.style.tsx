@@ -1,9 +1,24 @@
 import styled from "styled-components";
 
-export const Background = styled.main<{backgroundImage: string}>`
+const Background = styled.main<{backgroundImage: string}>`
   .content {
     display: flex;
     flex-direction: row;
+    
+    .content-main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      gap: 1.6rem;
+      
+      .btn-group {
+        display: flex;
+        gap: 1.6rem;
+      }
+    }
+    
   }
   &::before {
     content: '';
@@ -32,3 +47,5 @@ export const Background = styled.main<{backgroundImage: string}>`
   }
 `;
 // not working :(
+
+export default Background;
