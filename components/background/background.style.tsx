@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Background = styled.main`
   &::after {
-    --blur: 15px; //change blur amount here, it will auto adjust hollow effect from blur with calc
+    --blur: 1.5rem; //change blur amount here, it will auto adjust hollow effect from blur with calc
     content: '';
     background-image: url("https://hypixel.net/attachments/2019-07-26_20-10-04-png.1252524/");
     background-size: cover;

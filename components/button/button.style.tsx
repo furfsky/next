@@ -6,12 +6,13 @@ export const Button = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
 
   background: #2c354d;
-  border: 0.2rem solid #000000;
-  box-shadow: inset -0.25rem -0.25rem 0px var(--furf-background-dark),
-  inset 0.25rem 0.25rem 0px var(--furf-background);
+  border: 0.32rem solid #000000;
+  box-shadow: inset -0.4rem -0.4rem 0px var(--furf-background-dark),
+  inset 0.4rem 0.4rem 0px var(--furf-background);
 
   /* Inside Auto Layout */
   flex: none;

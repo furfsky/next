@@ -8,8 +8,7 @@ export const NavbarWrapper = styled.nav`
     display: flex;
     justify-content: center;
     //   position: fixed;
-    height: 3rem;
-    width: 100%;
+    height: 4.8rem;
     background: var(--furf-background-dark);
     
     li {
@@ -19,7 +18,8 @@ export const NavbarWrapper = styled.nav`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 1.6rem 3.2rem;
+      font-size: 1.6rem;
 
       cursor: pointer;
       

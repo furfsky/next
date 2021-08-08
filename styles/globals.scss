@@ -1,5 +1,9 @@
 @use "font.scss";
 
+html {
+  font-size: 62.5%;
+}
+
 html,
 body,
 #__next {
