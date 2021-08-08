@@ -8,9 +8,9 @@ import { Background } from "../components/background/background.style";
 //TODO make background work actually
 export default function Home() {
   return (
-    <>
+    <Background>
       <Navbar />
       <Button>Hello World</Button>
-    </>
+    </Background>
   );
 }

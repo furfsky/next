@@ -1,42 +1,32 @@
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import cx from 'classnames';
+
 import { NavbarWrapper } from "./navbar.style";
-import cx from "classnames";
 
 const NAV_LINKS = [
   {
-    label: "Home",
-    src: "/",
-    isActive: true, // example to check if active class works
+    label: 'Home',
+    path: '/',
   },
   {
-    label: "Downloads",
-    src: "",
+    label: 'Downloads',
+    path: '/downloads',
   },
-  {
-    label: "Stuff",
-    src: "",
-  },
-  {
-    label: "Other Stuff",
-    src: "",
-  },
-];
+]
 
 const Navbar: React.FC = () => {
+  const router = useRouter();
   return (
     <NavbarWrapper>
       <ul>
         {NAV_LINKS.map((tab, index) => (
-          <li
-            className={cx({ active: tab.isActive })}
-            key={`${tab.label}-${index}`}
-          >
-            {tab.label}
-          </li>
+          <li className={cx({active: router.pathname === tab.path})} key={tab.path}><Link href={tab.path}>{tab.label}</Link></li>
         ))}
       </ul>
     </NavbarWrapper>
   );
-};
+}
 
 export default Navbar;
