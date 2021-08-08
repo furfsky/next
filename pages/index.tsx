@@ -16,9 +16,9 @@ export default function Home() {
       <Navbar />
       <div className="content">
         <Sidebar />
-        {/*<div>*/}
-        {/*  <Button>Hello World</Button>*/}
-        {/*</div>*/}
+        <div>
+          <Button>Hello World</Button>
+        </div>
       </div>
     </Background>
   );
