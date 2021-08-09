@@ -15,7 +15,7 @@ const Quote: React.FC<QuoteProps> = ({author, children}) => (
 
 // &apos; <- use instead of '
 
-const quotesCollection = [
+export const quotesCollection = [
   <><Quote author="smolegit">light geometry can die in a hole.</Quote></>,
   <><Quote author="pcart">your toes will be pulled tonight</Quote></>,
   <><Quote author="𝐻𝑒𝓃𝓇𝓎 Æ𝓋𝑒𝓇𝒾𝑒𝓈, 𝟣𝟫𝟫𝟦">𝒥𝒶𝓂 𝒶 𝑀𝒶𝓃 𝑜𝒻 𝐹𝑜𝓇𝓉𝓊𝓃𝑒, 𝒶𝓃𝒹 𝒥 𝓂𝓊𝓈𝓉 𝓈𝑒𝑒𝓀 𝓂𝓎 𝐹𝑜𝓇𝓉𝓊𝓃𝑒</Quote></>,
@@ -36,7 +36,7 @@ const quotesCollection = [
   <><Quote author="Sun Tzu, Art of war">If you are trash go cry to Fortnite you loser</Quote></>,
 ];
 
-const textCollection = [
+export const textCollection = [
   `Furfsky+ but its reborn`,
   `bottem text`,
   `The second era of Furfsky+`,
