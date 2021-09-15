@@ -104,7 +104,7 @@ export const subtitleCollection: SubtitleCollection = [
   ...textCollection.map(text => <>{text}</>),
   <><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">join discord server here</a></>,
   <><h2>big text</h2></>,
-  <>website by voxal<br/><small>(and for now, maintained by erymanthus)</small></>, // TODO update to include FoxScript uwu
+  <>website by voxal and FoxScript<br/></>, // TODO update to include FoxScript uwu // i got u uwu
   <><p contentEditable>you can edit this text</p></>,
   <>Think, Tyler!<br/><br/>You&apos;re asking for this site&apos;s quotes to consist entirely of FSR Discord inside jokes!<br/>Why do you think I started adding quotes from TV shows?</>,
   <><span style={ {fontSize: '5rem'} }>https://discord.com/channels/771187253937438762/772844452116824106/789595450306592798</span></>,

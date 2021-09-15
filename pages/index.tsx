@@ -12,7 +12,6 @@ import twitterLogo from '../public/logos/social/twitter.svg';
 import youtubeLogo from '../public/logos/social/youtube.svg';
 import hypixelLogo from '../public/logos/social/hypixel.svg';
 
-// TODO make background work actually
 export default function Home() {
   return (
     <Background backgroundImage={backgroundImage2.src}>
