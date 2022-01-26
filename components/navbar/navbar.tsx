@@ -22,14 +22,15 @@ const Navbar: React.FC = () => {
     <NavbarWrapper>
       <ul>
         {NAV_LINKS.map(tab => (
-          <li
-            className={cx({active: router.pathname === tab.path})}
-            key={tab.path}
-          >
-            <Link href={tab.path}>
+          <Link href={tab.path}>
+            <li
+              className={cx({ active: router.pathname === tab.path })}
+              key={tab.path}
+            >
               {tab.label}
-            </Link>
-          </li>
+            </li>
+          </Link>
+
         ))}
       </ul>
     </NavbarWrapper>

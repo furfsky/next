@@ -1,16 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import SidebarWrapper from "./sidebar.style";
-import Logo from '../../public/logos/logo.gif';
-import Subtitle from "../subtitle/subtitle";
 
 interface SidebarProps {
+  children: React.ReactNode
 }
 
-const Sidebar: React.FC<SidebarProps> = () => (
+const Sidebar: React.FC<SidebarProps> = (props: SidebarProps) => (
     <SidebarWrapper>
-      <Image src={Logo} height={200} objectFit="contain" />
-      <Subtitle />
+      {props.children}
     </SidebarWrapper>
   );
 

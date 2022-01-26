@@ -5,6 +5,9 @@ import Navbar from "../components/navbar/navbar";
 import Background from "../components/background/background.style";
 import Sidebar from "../components/sidebar/sidebar";
 import DownloadButtons from "../components/home/layouts/download-buttons";
+// TODO move to homeSidebar.tsx or smth
+import Logo from '../public/logos/logo.gif';
+import Subtitle from "../components/subtitle/subtitle";
 
 import backgroundImage2 from '../public/backgrounds/2.png';
 import discordLogo from '../public/logos/social/discord.svg';
@@ -12,13 +15,15 @@ import twitterLogo from '../public/logos/social/twitter.svg';
 import youtubeLogo from '../public/logos/social/youtube.svg';
 import hypixelLogo from '../public/logos/social/hypixel.svg';
 
-// TODO make background work actually
 export default function Home() {
   return (
     <Background backgroundImage={backgroundImage2.src}>
       <Navbar />
       <div className="content">
-        <Sidebar />
+        <Sidebar>
+          <Image src={Logo} height={200} objectFit="contain" />
+          <Subtitle />
+        </Sidebar>
         <div className="content-main">
           <DownloadButtons>
             <Button isPrimary gridArea="download-primary">

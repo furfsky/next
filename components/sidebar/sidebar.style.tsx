@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SidebarWrapper = styled.div`
   min-height: calc(100vh - var(--navbar-height));
   background: rgba(28, 29, 48, 0.5);
-  min-width: 40rem;
+  min-width: 60rem;
   max-width: 90rem;
   display: flex;
   flex-direction: column;
