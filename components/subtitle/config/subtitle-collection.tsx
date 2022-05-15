@@ -1,39 +1,70 @@
-import React from "react";
+import React from 'react';
 
-type SubtitleCollection = React.ReactElement[]
+type SubtitleCollection = React.ReactElement[];
 type QuoteProps = {
   author: string | React.ReactElement;
-}
+};
 
-const Quote: React.FC<QuoteProps> = ({author, children}) => (
+const Quote: React.FC<QuoteProps> = ({ author, children }) => (
   <>
-    {'"'}{children}{'"'}
-    <br/>
-    －{author}
+    &quot;{children}&quot;
+    <br />－{author}
   </>
-)
+);
 
 // &apos; <- use instead of '
 
 export const quotesCollection = [
-  <><Quote author="smolegit">light geometry can die in a hole.</Quote></>,
-  <><Quote author="pcart">your toes will be pulled tonight</Quote></>,
-  <><Quote author="𝐻𝑒𝓃𝓇𝓎 Æ𝓋𝑒𝓇𝒾𝑒𝓈, 𝟣𝟫𝟫𝟦">𝒥𝒶𝓂 𝒶 𝑀𝒶𝓃 𝑜𝒻 𝐹𝑜𝓇𝓉𝓊𝓃𝑒, 𝒶𝓃𝒹 𝒥 𝓂𝓊𝓈𝓉 𝓈𝑒𝑒𝓀 𝓂𝓎 𝐹𝑜𝓇𝓉𝓊𝓃𝑒</Quote></>,
-  <><Quote author="a bald idiot">This pack is trash</Quote></>,
-  <><Quote author="Sun Tzu">Pretend inferiority and encourage his arrogance.</Quote></>,
-  <><Quote author="goog">i realised i haven&apos;t blinked in like half an hour and now blinking feels uncomfortable</Quote></>,
-  <><Quote author="goog">i do love buying birth certificates from the black market</Quote></>,
-  <><Quote author="Perpillow">who needs packs hq anyways</Quote></>,
-  <><Quote author="Technoblade">
-    <i>
-      You can murder kids, because there&apos;s a point in murdering kids,
-      <br/>
-      But lying, There&apos;s no reason to lie, Only bad people lie. Killing Children is okay though.
-    </i>
-  </Quote></>,
-  <><Quote author="Penguin">The furrier the better</Quote></>,
-  <><Quote author="Shrek’s Mom"><i>Remember, life is what you make of it. Even if you are feeling down, you will get back up, Even though you did something bad, things will get better. Just because you came on your nice shoes in the bathroom at school, probably nobody will notice.</i></Quote></>,
-  <><Quote author="Sun Tzu, Art of war">If you are trash go cry to Fortnite you loser</Quote></>,
+  <>
+    <Quote author="smolegit">light geometry can die in a hole.</Quote>
+  </>,
+  <>
+    <Quote author="pcart">your toes will be pulled tonight</Quote>
+  </>,
+  <>
+    <Quote author="𝐻𝑒𝓃𝓇𝓎 Æ𝓋𝑒𝓇𝒾𝑒𝓈, 𝟣𝟫𝟫𝟦">𝒥𝒶𝓂 𝒶 𝑀𝒶𝓃 𝑜𝒻 𝐹𝑜𝓇𝓉𝓊𝓃𝑒, 𝒶𝓃𝒹 𝒥 𝓂𝓊𝓈𝓉 𝓈𝑒𝑒𝓀 𝓂𝓎 𝐹𝑜𝓇𝓉𝓊𝓃𝑒</Quote>
+  </>,
+  <>
+    <Quote author="a bald idiot">This pack is trash</Quote>
+  </>,
+  <>
+    <Quote author="Sun Tzu">Pretend inferiority and encourage his arrogance.</Quote>
+  </>,
+  <>
+    <Quote author="goog">
+      i realised i haven&apos;t blinked in like half an hour and now blinking feels uncomfortable
+    </Quote>
+  </>,
+  <>
+    <Quote author="goog">i do love buying birth certificates from the black market</Quote>
+  </>,
+  <>
+    <Quote author="Perpillow">who needs packs hq anyways</Quote>
+  </>,
+  <>
+    <Quote author="Technoblade">
+      <i>
+        You can murder kids, because there&apos;s a point in murdering kids,
+        <br />
+        But lying, There&apos;s no reason to lie, Only bad people lie. Killing Children is okay though.
+      </i>
+    </Quote>
+  </>,
+  <>
+    <Quote author="Penguin">The furrier the better</Quote>
+  </>,
+  <>
+    <Quote author="Shrek’s Mom">
+      <i>
+        Remember, life is what you make of it. Even if you are feeling down, you will get back up, Even though
+        you did something bad, things will get better. Just because you came on your nice shoes in the
+        bathroom at school, probably nobody will notice.
+      </i>
+    </Quote>
+  </>,
+  <>
+    <Quote author="Sun Tzu, Art of war">If you are trash go cry to Fortnite you loser</Quote>
+  </>,
 ];
 
 export const textCollection = [
@@ -97,19 +128,71 @@ export const textCollection = [
   `doodoo woohoo`,
   `it do be like that`,
   `furf is into mice`,
-]
+];
 
 export const subtitleCollection: SubtitleCollection = [
   ...quotesCollection,
   ...textCollection.map(text => <>{text}</>),
-  <><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">join discord server here</a></>,
-  <><h2>big text</h2></>,
-  <>website by voxal and FoxScript<br/></>, // TODO update to include FoxScript uwu // i got u uwu
-  <><p contentEditable>you can edit this text</p></>,
-  <>Think, Tyler!<br/><br/>You&apos;re asking for this site&apos;s quotes to consist entirely of FSR Discord inside jokes!<br/>Why do you think I started adding quotes from TV shows?</>,
-  <><span style={ {fontSize: '5rem'} }>https://discord.com/channels/771187253937438762/772844452116824106/789595450306592798</span></>,
-  <><span style={ {fontSize: '1rem'} }>Honestly, it&apos;s unfathomable how some gamers are so much better at gaming than us simpletons. Take Minecraft, for example. There are people who get mad at dying while completing the entire game. Their standards are so high that they would ragequit out of rage when they die after over an hour of challenging frame perfect and subpixel perfect inputs. Me, I can&apos;t even make a wood shovel. It&apos;s ridiculous how good those top notch gamers have gotten at this video game to even consider getting all of the achievements in one sitting. They must&apos;ve trained and practiced at this game for numerous hours each day, pouring every ounce of effort they have into perfecting their finger movements, touching the keys on their keyboard with precision unmatched by anything else. Such dedication going unnoticed in the general public is unfair, and I feel like those gamers deserve all the recognition they can get</span></>,
-  <><span style={ {fontSize: '1rem'} }>moulberry bush man is swag man with big pp and huge brain he is like the god of the gods and he has gaming skin and stuff he plays with 1000iq and is like omg moulberry moment i sometimes wonder what is a moulberry is it berry or is a it a moul or maybe its a moulberry i guess we will never know and like moul is like omg MOUL its very cool and swag he has like huge balls and stuff too and he&apos;s like super funny and shit too he also has cool australian accent like my life without moulberry wud be incomplete i need moulberry in my life he&apos;s god he&apos;s life he&apos;s moulberry but he&apos;s not a blueberry if he was a blueberry it wouldve been cooler since like blueberries are cooler but it is what it is he has 46203 simps already and that number grows everyday and i wonder if one day he will have 100 thousands simps i mean knowning moulberry he probably will but then again ppl are dumb and they dont understand the power of the berry and havent joined the server like why are you why do u you even live i question this all day long and sometimes i think that i might be too obsessed with moulberry but then i realize you can never be too upset by the berry himself it gives me the will to live moulberry is the reason im still here the day moulberry leaves my life i will commit die i can not live without the moulberry and his big pp.</span></>,
-]
+  <>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="underline">
+      join discord server here
+    </a>
+  </>,
+  <>
+    <h2 className="text-4xl">big text</h2>
+  </>,
+  <>
+    website by voxal and FoxScript
+    <br />
+  </>,
+  <>
+    <p contentEditable>you can edit this text</p>
+  </>,
+  <>
+    Think, Tyler!
+    <br />
+    <br />
+    You&apos;re asking for this site&apos;s quotes to consist entirely of FSR Discord inside jokes!
+    <br />
+    Why do you think I started adding quotes from TV shows?
+  </>,
+  <>
+    <span className="text-sm">
+      https://discord.com/channels/771187253937438762/772844452116824106/789595450306592798
+    </span>
+  </>,
+  <>
+    <span className="text-sm">
+      Honestly, it&apos;s unfathomable how some gamers are so much better at gaming than us simpletons. Take
+      Minecraft, for example. There are people who get mad at dying while completing the entire game. Their
+      standards are so high that they would ragequit out of rage when they die after over an hour of
+      challenging frame perfect and subpixel perfect inputs. Me, I can&apos;t even make a wood shovel.
+      It&apos;s ridiculous how good those top notch gamers have gotten at this video game to even consider
+      getting all of the achievements in one sitting. They must&apos;ve trained and practiced at this game for
+      numerous hours each day, pouring every ounce of effort they have into perfecting their finger movements,
+      touching the keys on their keyboard with precision unmatched by anything else. Such dedication going
+      unnoticed in the general public is unfair, and I feel like those gamers deserve all the recognition they
+      can get
+    </span>
+  </>,
+  <>
+    <span className="text-sm">
+      moulberry bush man is swag man with big pp and huge brain he is like the god of the gods and he has
+      gaming skin and stuff he plays with 1000iq and is like omg moulberry moment i sometimes wonder what is a
+      moulberry is it berry or is a it a moul or maybe its a moulberry i guess we will never know and like
+      moul is like omg MOUL its very cool and swag he has like huge balls and stuff too and he&apos;s like
+      super funny and shit too he also has cool australian accent like my life without moulberry wud be
+      incomplete i need moulberry in my life he&apos;s god he&apos;s life he&apos;s moulberry but he&apos;s
+      not a blueberry if he was a blueberry it wouldve been cooler since like blueberries are cooler but it is
+      what it is he has 46203 simps already and that number grows everyday and i wonder if one day he will
+      have 100 thousands simps i mean knowning moulberry he probably will but then again ppl are dumb and they
+      dont understand the power of the berry and havent joined the server like why are you why do u you even
+      live i question this all day long and sometimes i think that i might be too obsessed with moulberry but
+      then i realize you can never be too upset by the berry himself it gives me the will to live moulberry is
+      the reason im still here the day moulberry leaves my life i will commit die i can not live without the
+      moulberry and his big pp.
+    </span>
+  </>,
+];
 
 // done up to line 138 https://github.com/furfsky/furfsky.github.io/blob/master/scripts/data.js
