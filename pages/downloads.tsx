@@ -22,7 +22,7 @@ const Downloads: React.FC = () => (
           <DownloadGroup name="Overheated" version="v1.5" variants={{ fl: '', ov: '' }} disabled />
           <div className="flex flex-col bg-[repeating-linear-gradient(45deg,#ffaa007f,#ffaa007f_10px,#ffffff00_10px,#ffffff00_20px)] w-full h-full absolute top-0 bg-opacity-20 rounded-md backdrop-brightness-50">
             <h2 className="text-4xl font-bold text-gold-400 [text-shadow:4px_4px_0_#441a08] text-center">
-              Under Construction
+              Pack Progress
             </h2>
             <div className="flex items-center justify-center w-full grow">
               <div className="h-12 bg-pale-600 w-96 shadow-[inset_-0.4rem_-0.4rem_0px_#1c1d30,inset_0.4rem_0.4rem_0px_#444a71]">

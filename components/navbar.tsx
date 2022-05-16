@@ -55,7 +55,7 @@ const Navbar = () => {
           <li
             className={cx(
               'flex flex-col justify-center p-4 text-2xl font-bold text-white shadow items-center',
-              { 'text-gold-400 [text-shadow:4px_4px_0_#441a08]': router.pathname === tab.path },
+              { '!text-gold-400 [text-shadow:4px_4px_0_#441a08]': router.pathname === tab.path },
             )}
             key={tab.path}
           >
