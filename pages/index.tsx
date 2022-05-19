@@ -12,6 +12,7 @@ import discordLogo from '../public/logos/social/discord.svg';
 import twitterLogo from '../public/logos/social/twitter.svg';
 import youtubeLogo from '../public/logos/social/youtube.svg';
 import hypixelLogo from '../public/logos/social/hypixel.svg';
+import { versions } from '../components/downloads/config/versions';
 
 export default function Home() {
   return (
@@ -26,23 +27,35 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-gold-500 [text-shadow:4px_4px_0_#441a08] mb-8">
             Download Latest Version
           </h2>
-          <div className="flex flex-row gap-4 p-2 text-3xl grow">
-            <Button className="basis-1/2">v.1.4 Full</Button>
-            <Button className="basis-1/2">v.1.4 Overlay</Button>
+          <div className="flex flex-row gap-4 p-2 text-2xl grow">
+            <a href={versions[0].variants.fl} download className="basis-1/2">
+              <Button className="w-full">{versions[0].version} Full</Button>
+            </a>
+            <a href={versions[0].variants.ov} download className="basis-1/2">
+              <Button className="w-full">{versions[0].version} Overlay</Button>
+            </a>
           </div>
           <div className="flex flex-row gap-4 p-2 grow">
-            <Button className="basis-1/4">
-              <Image objectFit="contain" src={discordLogo} alt="Discord" height={25} />
-            </Button>
-            <Button className="basis-1/4">
-              <Image objectFit="contain" src={twitterLogo} alt="Twitter" height={25} />
-            </Button>
-            <Button className="basis-1/4">
-              <Image objectFit="contain" src={youtubeLogo} alt="YouTube" height={25} />
-            </Button>
-            <Button className="basis-1/4">
-              <Image objectFit="contain" src={hypixelLogo} alt="Hypixel" height={30} />
-            </Button>
+            <a href="https://discord.gg/fsr" target="_blank" className="basis-1/4">
+              <Button className="w-full h-full">
+                <Image objectFit="contain" src={discordLogo} alt="Discord" height={25} />
+              </Button>
+            </a>
+            <a href="https://twitter.com/furfskyreborn" target="_blank" className="basis-1/4">
+              <Button className="w-full h-full">
+                <Image objectFit="contain" src={twitterLogo} alt="Twitter" height={25} />
+              </Button>
+            </a>
+            <a href="https://www.youtube.com/hellcastleyt" target="_blank" className="basis-1/4">
+              <Button className="w-full h-full">
+                <Image objectFit="contain" src={youtubeLogo} alt="YouTube" height={25} />
+              </Button>
+            </a>
+            <a href="https://hypixel.net/threads/furfsky-reborn-1-4-1-rosettas-wares.4101579/" target="_blank" className="basis-1/4">
+              <Button className="w-full h-full">
+                <Image objectFit="contain" src={hypixelLogo} alt="Hypixel" height={30} />
+              </Button>
+            </a>
           </div>
         </div>
       </Content>
