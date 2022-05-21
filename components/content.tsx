@@ -11,7 +11,7 @@ const Content = ({ children, className, backgroundImage }: ContentProps) => (
     className="min-h-screen bg-fixed bg-center bg-cover bg-slate-100"
     style={{ backgroundImage: `url(${backgroundImage})` }}
   >
-    <div className="flex flex-row w-full min-h-screen backdrop-blur-md backdrop-brightness-75">
+    <div className="flex flex-row w-full min-h-screen backdrop-blur-sm backdrop-brightness-75">
       <div className={`justify-center items-center pl-[40%] grow ${className}`}>{children}</div>
     </div>
   </main>

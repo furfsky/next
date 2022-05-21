@@ -1,21 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
+import { GetStaticProps, NextPage } from 'next';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
 import DownloadGroup from '../components/downloads/downloadGroup';
 import Content from '../components/content';
 
-import backgroundImage1 from '../public/backgrounds/1.png';
 import Logo from '../public/logos/downloads.png';
 import { versions } from '../components/downloads/config/versions';
+import { PageProps, getRandomBackground } from '../components/background';
 
-const Downloads: React.FC = () => (
+const Downloads: NextPage<PageProps> = ({ background }) => (
   <>
     <Navbar />
     <Sidebar>
       <Image src={Logo} height={200} objectFit="contain" />
     </Sidebar>
-    <Content backgroundImage={backgroundImage1.src}>
+    <Content backgroundImage={background}>
       <div className="p-24">
         <div className="relative">
           {/* TODO fallback for firefox */}
@@ -26,7 +27,7 @@ const Downloads: React.FC = () => (
             </h2>
             <div className="flex items-center justify-center w-full grow">
               <div className="h-12 bg-pale-600 w-96 shadow-[inset_-0.4rem_-0.4rem_0px_#1c1d30,inset_0.4rem_0.4rem_0px_#444a71]">
-                <div className="bg-gold-400 shadow-[inset_-0.4rem_-0.4rem_0px_#441a08,inset_0.4rem_0.4rem_0px_#ffaa00] w-[calc(24rem*0.48)] h-full" />
+                <div className="bg-gold-400 shadow-[inset_-0.4rem_-0.4rem_0px_#441a08,inset_0.4rem_0.4rem_0px_#ffaa00] w-[calc(24rem*0.95)] h-full" />
               </div>
             </div>
           </div>
@@ -38,5 +39,11 @@ const Downloads: React.FC = () => (
     </Content>
   </>
 );
+
+export const getStaticProps: GetStaticProps<PageProps> = async () => ({
+  props: {
+    background: await getRandomBackground(),
+  },
+});
 
 export default Downloads;

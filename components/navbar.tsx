@@ -49,14 +49,13 @@ const NAV_LINKS = [
 const Navbar = () => {
   const router = useRouter();
   return (
-    <div className="fixed z-50 w-full">
+    <div className="fixed z-50 w-full shadow-xl">
       <ul className="flex justify-center h-16 list-none bg-pale-600">
         {NAV_LINKS.map(tab => (
           <li
-            className={cx(
-              'flex flex-col justify-center p-4 text-2xl font-bold text-white shadow items-center',
-              { '!text-gold-400 [text-shadow:4px_4px_0_#441a08]': router.pathname === tab.path },
-            )}
+            className={cx('flex flex-col justify-center p-4 text-2xl font-bold text-white items-center', {
+              '!text-gold-400 [text-shadow:4px_4px_0_#441a08]': router.pathname === tab.path,
+            })}
             key={tab.path}
           >
             <Link href={tab.path} passHref>
