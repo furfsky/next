@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { GetStaticProps, NextPage } from 'next';
+import { NextPage } from 'next';
+import useSWR from 'swr';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
 import DownloadGroup from '../components/downloads/downloadGroup';
@@ -8,41 +9,37 @@ import Content from '../components/content';
 
 import Logo from '../public/logos/downloads.png';
 import { versions } from '../components/downloads/config/versions';
-import { PageProps, getRandomBackground } from '../components/background';
 
-const Downloads: NextPage<PageProps> = ({ background }) => (
-  <>
-    <Navbar />
-    <Sidebar>
-      <Image src={Logo} height={200} objectFit="contain" />
-    </Sidebar>
-    <Content backgroundImage={background}>
-      <div className="p-24">
-        <div className="relative">
-          <DownloadGroup name="Overheated" version="v1.5" variants={{ fl: '', ov: '' }} disabled />
-          <div className="flex flex-col bg-[repeating-linear-gradient(45deg,#775500cc,#775500cc_10px,#2c354dcc_10px,#2c354dcc_20px)] w-full h-full absolute top-0 bg-opacity-20 rounded-md">
-            <h2 className="text-4xl font-bold text-gold-400 [text-shadow:4px_4px_0_#441a08] text-center">
-              Pack Progress
-            </h2>
-            <div className="flex items-center justify-center w-full grow">
-              <div className="h-12 bg-pale-600 w-96 shadow-[inset_-0.4rem_-0.4rem_0px_#1c1d30,inset_0.4rem_0.4rem_0px_#444a71]">
-                <div className="bg-gold-400 shadow-[inset_-0.4rem_-0.4rem_0px_#441a08,inset_0.4rem_0.4rem_0px_#ffaa00] w-[calc(24rem*0.95)] h-full" />
+const Downloads: NextPage = () => {
+  const { data } = useSWR('/api/background', url => fetch(url).then(res => res.text()));
+  return (
+    <>
+      <Navbar />
+      <Sidebar>
+        <Image src={Logo} height={200} objectFit="contain" />
+      </Sidebar>
+      <Content backgroundImage={data ?? '/backgrounds/2022-05-21_12.02.35.png'}>
+        <div className="p-24">
+          <div className="relative">
+            <DownloadGroup name="Overheated" version="v1.5" variants={{ fl: '', ov: '' }} disabled />
+            <div className="flex flex-col bg-[repeating-linear-gradient(45deg,#775500cc,#775500cc_10px,#2c354dcc_10px,#2c354dcc_20px)] w-full h-full absolute top-0 bg-opacity-20 rounded-md">
+              <h2 className="text-4xl font-bold text-gold-400 [text-shadow:4px_4px_0_#441a08] text-center">
+                Pack Progress
+              </h2>
+              <div className="flex items-center justify-center w-full grow">
+                <div className="h-12 bg-pale-600 w-96 shadow-[inset_-0.4rem_-0.4rem_0px_#1c1d30,inset_0.4rem_0.4rem_0px_#444a71]">
+                  <div className="bg-gold-400 shadow-[inset_-0.4rem_-0.4rem_0px_#441a08,inset_0.4rem_0.4rem_0px_#ffaa00] w-[calc(24rem*0.95)] h-full" />
+                </div>
               </div>
             </div>
           </div>
+          {versions.map(version => (
+            <DownloadGroup {...version} key={version.version} />
+          ))}
         </div>
-        {versions.map(version => (
-          <DownloadGroup {...version} />
-        ))}
-      </div>
-    </Content>
-  </>
-);
-
-export const getStaticProps: GetStaticProps<PageProps> = async () => ({
-  props: {
-    background: await getRandomBackground(),
-  },
-});
+      </Content>
+    </>
+  );
+};
 
 export default Downloads;
