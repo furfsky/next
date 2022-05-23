@@ -44,6 +44,10 @@ const NAV_LINKS = [
     label: 'Downloads',
     path: '/downloads',
   },
+  {
+    label: 'Credits',
+    path: '/credits'
+  }
 ];
 
 const Navbar = () => {
