@@ -18,5 +18,8 @@
         "tsx": "never"
       }
     ]
+  },
+  "env": {
+    "browser": true
   }
 }

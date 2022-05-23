@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { NextPage } from 'next';
-import useSWR from 'swr';
 import Button from '../components/button';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
@@ -14,14 +13,10 @@ import twitterLogo from '../public/logos/social/twitter.svg';
 import youtubeLogo from '../public/logos/social/youtube.svg';
 import hypixelLogo from '../public/logos/social/hypixel.svg';
 import { versions } from '../components/downloads/config/versions';
+import { useRandomBackground } from '../util/background';
 
 const Home: NextPage = () => {
-  let data: any;
-  useEffect(() => {
-    const d = useSWR('/api/background', url => fetch(url).then(res => res.text()));
-    data = d.data;
-  }, []);
-
+  const background = useRandomBackground('/backgrounds/2022-05-21_12.02.35.png');
   return (
     <>
       <Navbar />
@@ -31,7 +26,7 @@ const Home: NextPage = () => {
       </Sidebar>
       <Content
         className="flex flex-col w-2/3"
-        backgroundImage={data ?? '/backgrounds/2022-05-21_12.02.35.png'}
+        backgroundImage={background}
       >
         <div className="flex flex-col w-2/3">
           <h2 className="text-4xl font-bold text-center text-gold-500 [text-shadow:4px_4px_0_#441a08] mb-8">

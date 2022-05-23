@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { NextPage } from 'next';
-import useSWR from 'swr';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
 import DownloadGroup from '../components/downloads/downloadGroup';
@@ -9,16 +8,17 @@ import Content from '../components/content';
 
 import Logo from '../public/logos/downloads.png';
 import { versions } from '../components/downloads/config/versions';
+import { useRandomBackground } from '../util/background';
 
 const Downloads: NextPage = () => {
-  const { data } = useSWR('/api/background', url => fetch(url).then(res => res.text()));
+  const background = useRandomBackground();
   return (
     <>
       <Navbar />
       <Sidebar>
         <Image src={Logo} height={200} objectFit="contain" />
       </Sidebar>
-      <Content backgroundImage={data ?? '/backgrounds/2022-05-21_12.02.35.png'}>
+      <Content backgroundImage={background}>
         <div className="p-24">
           <div className="relative">
             <DownloadGroup name="Overheated" version="v1.5" variants={{ fl: '', ov: '' }} disabled />
