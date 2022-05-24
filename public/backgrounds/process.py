@@ -16,6 +16,6 @@ for file in os.listdir():
         with Image.open(f"{name}.png") as im:
             if im.size > size:
                 raw = im.copy()
-                raw.save(f"raw/{name}.png", "PNG")
+                raw.save(f"../rawbg/{name}.png", "PNG")
                 im.thumbnail(size)
                 im.save(f"{name}.png", "PNG")
