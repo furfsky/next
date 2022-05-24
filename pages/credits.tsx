@@ -19,10 +19,15 @@ const Credits: NextPage = () => {
         <Image src={Logo} height={200} objectFit="contain" />
       </Sidebar>
       {/* TODO add shadows to the text to maybe make it more readable, also refactor colors (use red for god's sake) */}
-      <Content backgroundImage={background} dark>
+      <Content backgroundImage={background} className="text-center" dark>
         {credits.credits.map(credit => (
-          <div style={{ color: (credits.roles as any)[credit.role].color }} className="text-center">
-            {credit.name} - {(credits.roles as any)[credit.role].name}
+          <div
+            style={{ color: (credits.roles as any)[credit.role].color }}
+            className="inline-block m-8 text-2xl text-center"
+          >
+            <h3 className="mb-4 text-4xl">{credit.name}</h3>
+            <p>{(credits.roles as any)[credit.role].name}</p>
+            {/* {credit.quote ? <p className="italic">{credit.quote}</p> : ''} */}
           </div>
         ))}
       </Content>

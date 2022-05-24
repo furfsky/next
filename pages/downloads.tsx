@@ -19,7 +19,7 @@ const Downloads: NextPage = () => {
         <Image src={Logo} height={200} objectFit="contain" />
       </Sidebar>
       <Content backgroundImage={background}>
-        <div className="p-24">
+        <div className="px-24 py-8">
           <div className="relative">
             <DownloadGroup name="Overheated" version="v1.5" variants={{ fl: '', ov: '' }} disabled />
             <div className="flex flex-col bg-[repeating-linear-gradient(45deg,#775500cc,#775500cc_10px,#2c354dcc_10px,#2c354dcc_20px)] w-full h-full absolute top-0 bg-opacity-20 rounded-md">
