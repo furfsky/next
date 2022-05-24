@@ -9,8 +9,8 @@
     "772842293223751690": { "name": "Artist", "color": "#b19cd9" },
     "786640237329383506": { "name": "Retired Artist", "color": "#bbabdb" },
     "772928360241954846": { "name": "Contributor", "color": "#00b0b0" },
-    "792234642304139284": { "name": "Administrator", "color": "#4b8b3b" },
-    "772882533578047519": { "name": "Moderator", "color": "#17d44a" },
+    "792234642304139284": { "name": "Administrator", "color": "#17d44a" },
+    "772882533578047519": { "name": "Moderator", "color": "#4b8b3b" },
     "786640364920504330": { "name": "Retired Staff", "color": "#0d7f2c" }
   },
   "credits": [
