@@ -1,17 +1,45 @@
 {
   "roles": {
-    "772842526452875305": { "name": "Head of Head Artist", "color": "#ffa500" },
-    "776504774317047859": { "name": "Head Artist", "color": "#d776ff" },
+    "772842526452875305": {
+      "name": "Head of Head Artist",
+      "color": "#ffa500"
+    },
+    "776504774317047859": {
+      "name": "Head Artist",
+      "color": "#d776ff"
+    },
     "859275007556845578": {
       "name": "Original Furfsky Creator",
       "color": "#c041ff"
     },
-    "772842293223751690": { "name": "Artist", "color": "#b19cd9" },
-    "786640237329383506": { "name": "Retired Artist", "color": "#bbabdb" },
-    "772928360241954846": { "name": "Contributor", "color": "#00b0b0" },
-    "792234642304139284": { "name": "Administrator", "color": "#17d44a" },
-    "772882533578047519": { "name": "Moderator", "color": "#4b8b3b" },
-    "786640364920504330": { "name": "Retired Staff", "color": "#0d7f2c" }
+    "772842293223751690": {
+      "name": "Artist",
+      "color": "#b19cd9"
+    },
+    "786640237329383506": {
+      "name": "Retired Artist",
+      "color": "#bbabdb"
+    },
+    "788121309812490250": {
+      "name": "Website Developer",
+      "color": "#008080"
+    },
+    "772928360241954846": {
+      "name": "Contributor",
+      "color": "#00b0b0"
+    },
+    "792234642304139284": {
+      "name": "Administrator",
+      "color": "#17d44a"
+    },
+    "772882533578047519": {
+      "name": "Moderator",
+      "color": "#4b8b3b"
+    },
+    "786640364920504330": {
+      "name": "Retired Staff",
+      "color": "#0d7f2c"
+    }
   },
   "credits": [
     {
@@ -48,7 +76,7 @@
       "id": "490923254236839936",
       "name": "me.™",
       "role": "772842293223751690",
-      "pfp": "https://cdn.discordapp.com/avatars/490923254236839936/ca9108ee7a5aa5c2143aaa691547f70b.webp"
+      "pfp": "https://cdn.discordapp.com/avatars/490923254236839936/d0474c5c223857f4a660a327dd909976.webp"
     },
     {
       "id": "146051610475233280",
@@ -178,6 +206,12 @@
       "pfp": "https://cdn.discordapp.com/avatars/663371660816154629/63b0242dcab4c4f92fab9acef4228f71.webp"
     },
     {
+      "id": "290952090560364545",
+      "name": "voxal",
+      "role": "788121309812490250",
+      "pfp": "https://cdn.discordapp.com/avatars/290952090560364545/8b38b3c27318b43c25911b0bf5ec3459.webp"
+    },
+    {
       "id": "364103462150995968",
       "name": "Amie",
       "role": "772928360241954846",
@@ -241,7 +275,7 @@
       "id": "454615922909380619",
       "name": "SeBook",
       "role": "772928360241954846",
-      "pfp": "https://cdn.discordapp.com/avatars/454615922909380619/a_0fe1f24fe0fa9feb26f07097d43fc529.webp"
+      "pfp": "https://cdn.discordapp.com/avatars/454615922909380619/a_b5268d536190a6c549f28b2d0ca330e2.webp"
     },
     {
       "id": "722532091455340714",
