@@ -15,6 +15,7 @@ import hypixelLogo from '../public/logos/social/hypixel.svg';
 import { versions } from '../components/downloads/config/versions';
 import { PageProps } from './_app';
 
+// TODO use https://nextjs.org/docs/basic-features/layouts
 // TODO this side bar is *slightly* larger than other pages and i can't figure out why (maybe fixed sidebar width instead of percentage)
 const Home: NextPage<PageProps> = ({ background }) => (
   <>
