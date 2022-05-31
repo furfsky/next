@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { NextPage } from 'next';
+import Head from 'next/head';
 import Button from '../components/button';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
@@ -19,6 +20,9 @@ import { PageProps } from './_app';
 // TODO this side bar is *slightly* larger than other pages and i can't figure out why (maybe fixed sidebar width instead of percentage)
 const Home: NextPage<PageProps> = ({ background }) => (
   <>
+  <Head>
+    <title>FurfSky Reborn - Home</title>
+  </Head>
     <Navbar />
     <Sidebar>
       <Image src={Logo} height={200} objectFit="contain" />

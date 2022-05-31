@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { NextPage } from 'next';
+import Head from 'next/head'
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
 import DownloadGroup from '../components/downloads/downloadGroup';
@@ -12,6 +13,9 @@ import { PageProps } from './_app';
 
 const Downloads: NextPage<PageProps> = ({ background }) => (
   <>
+    <Head>
+      <title>FurfSky Reborn - Downloads</title>
+    </Head>
     <Navbar />
     <Sidebar>
       <Image src={Logo} height={200} objectFit="contain" />
