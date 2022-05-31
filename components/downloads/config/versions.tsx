@@ -8,8 +8,16 @@ export interface Download {
     ovp?: string;
   };
 }
-
+// TODO v1.0.0 -> v1.0
 export const versions: Download[] = [
+  {
+    version: 'v1.5',
+    name: 'Overheated',
+    variants: {
+      fl: '/files/v1.5/§4§lFurfSky §6§lReborn §8§lFULL.zip',
+      ov: '/files/v1.5/§4§lFurfSky §6§lReborn §8§lOV.zip'
+    }
+  },
   {
     version: 'v1.4.2',
     name: '(Not So) Set In Stone',
