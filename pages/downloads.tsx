@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { NextPage } from 'next';
-import Head from 'next/head'
+import Head from 'next/head';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
 import DownloadGroup from '../components/downloads/downloadGroup';
