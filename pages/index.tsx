@@ -8,7 +8,7 @@ import Sidebar from '../components/sidebar';
 import Content from '../components/content';
 import Subtitle from '../components/subtitle';
 
-import Logo from '../public/logos/logo.gif';
+import Logo from '../public/logos/logoPride.gif';
 import discordLogo from '../public/logos/social/discord.svg';
 import twitterLogo from '../public/logos/social/twitter.svg';
 import youtubeLogo from '../public/logos/social/youtube.svg';
@@ -20,9 +20,9 @@ import { PageProps } from './_app';
 // TODO this side bar is *slightly* larger than other pages and i can't figure out why (maybe fixed sidebar width instead of percentage)
 const Home: NextPage<PageProps> = ({ background }) => (
   <>
-  <Head>
-    <title>FurfSky Reborn - Home</title>
-  </Head>
+    <Head>
+      <title>FurfSky Reborn - Home</title>
+    </Head>
     <Navbar />
     <Sidebar>
       <Image src={Logo} height={200} objectFit="contain" />
