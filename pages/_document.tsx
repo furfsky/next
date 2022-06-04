@@ -14,7 +14,7 @@ export default function Document() {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
-              gtag('config', G-NBBMVBPHT4);`,
+              gtag('config','G-NBBMVBPHT4');`,
           }}
         />
       </Head>
