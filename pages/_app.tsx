@@ -9,7 +9,7 @@ export interface PageProps {
 }
 
 function App({ Component, pageProps }: AppProps) {
-  const background = useRandomNetherBackground('/backgrounds/9c09b541.png');
+  const background = useRandomNetherBackground();
   return <Component {...pageProps} background={background} />;
 }
 export default App;
