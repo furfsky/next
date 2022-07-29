@@ -45,6 +45,10 @@ const NAV_LINKS = [
     path: '/downloads',
   },
   {
+    label: 'Gallery',
+    path: '/gallery'
+  },
+  {
     label: 'Credits',
     path: '/credits'
   }
