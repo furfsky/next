@@ -8,7 +8,7 @@ import Sidebar from '../components/sidebar';
 import Content from '../components/content';
 import Subtitle from '../components/subtitle';
 
-import Logo from '../public/logos/logoPride.gif';
+import Logo from '../public/logos/logo.gif';
 import discordLogo from '../public/logos/social/discord.svg';
 import twitterLogo from '../public/logos/social/twitter.svg';
 import youtubeLogo from '../public/logos/social/youtube.svg';
