@@ -17,6 +17,7 @@ export default function Document() {
               gtag('config','G-NBBMVBPHT4');`,
           }}
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
