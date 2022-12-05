@@ -19,6 +19,9 @@ const Downloads: NextPage<PageProps> = ({ background }) => (
     <Navbar />
     <Sidebar>
       <Image src={Logo} height={200} objectFit="contain" />
+	  <p className="mx-16 text-xl text-center text-gold-400 [text-shadow:4px_4px_0_#441a08]">
+          All Downloads are for Minecraft 1.8.9 with <a style={{textDecoration: "underline"}} href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html">Forge</a> and <a style={{textDecoration: "underline"}} href="https://optifine.net/downloads">OptiFine</a>.
+      </p>
     </Sidebar>
     <Content backgroundImage={background}>
       <div className="px-24 py-8">

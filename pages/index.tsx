@@ -31,7 +31,7 @@ const Home: NextPage<PageProps> = ({ background }) => (
     <Content className="flex flex-col w-2/3" backgroundImage={background}>
       <div className="flex flex-col w-2/3">
         <h2 className="text-4xl font-bold text-center text-gold-500 [text-shadow:4px_4px_0_#441a08] mb-8">
-          Download Latest Version
+          Download Latest Version for 1.8.9
         </h2>
         <div className="flex flex-row gap-4 p-2 text-2xl grow">
           <a href={versions[0].variants.fl} download className="basis-1/2">
