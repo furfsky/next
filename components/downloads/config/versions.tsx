@@ -11,20 +11,28 @@ export interface Download {
 // TODO v1.0.0 -> v1.0
 export const versions: Download[] = [
   {
+    version: 'v.1.6',
+    name: 'Permafrost',
+    variants: {
+      fl: '/files/v1.6/§b§lFurfSky §f§lReborn §8§lFULL.zip',
+      ov: '/files/v1.6/§b§lFurfSky §f§lReborn §8§lOVERLAY.zip',
+    },
+  },
+  {
     version: 'v1.5.1',
     name: 'Overheated Hotfix',
     variants: {
       fl: '/files/v1.5.1/§4§lFurfSky §6§lReborn §8§lFULL.zip',
-      ov: '/files/v1.5.1/§4§lFurfSky §6§lReborn §8§lOV.zip'
-    }
+      ov: '/files/v1.5.1/§4§lFurfSky §6§lReborn §8§lOV.zip',
+    },
   },
   {
     version: 'v1.5',
     name: 'Overheated',
     variants: {
       fl: '/files/v1.5/§4§lFurfSky §6§lReborn §8§lFULL.zip',
-      ov: '/files/v1.5/§4§lFurfSky §6§lReborn §8§lOV.zip'
-    }
+      ov: '/files/v1.5/§4§lFurfSky §6§lReborn §8§lOV.zip',
+    },
   },
   {
     version: 'v1.4.2',
