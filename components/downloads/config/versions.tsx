@@ -11,10 +11,18 @@ export interface Download {
 export const versions: Download[] = [
   {
     version: 'v1.6.3',
-    name: 'Permafrost Hotfix',
+    name: 'Permafrost Hotfix 2',
     variants: {
       fl: '/files/v1.6.3/§b§lFurfSky §f§lReborn §8§lFULL.zip',
       ov: '/files/v1.6.3/§b§lFurfSky §f§lReborn §8§lOVERLAY.zip',
+    },
+  },
+  {
+    version: 'v1.6.2',
+    name: 'Permafrost Hotfix',
+    variants: {
+      fl: '/files/v1.6.2/§b§lFurfSky §f§lReborn §8§lFULL.zip',
+      ov: '/files/v1.6.2/§b§lFurfSky §f§lReborn §8§lOVERLAY.zip',
     },
   },
   {
