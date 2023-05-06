@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { brightness } from '../../util/color';
 
 export interface Role {
@@ -31,14 +30,12 @@ export interface CreditProps {
   pfp: string;
 }
 // add color
-const CreditComponent = ({ id, name, role, quote, pfp }: CreditProps) => (
+const CreditComponent = ({ id, name, role, quote }: CreditProps) => (
   <div
     key={id}
     className="inline-block max-w-md p-8 text-white align-middle"
     style={{ color: role.color, textShadow: `2px 2px 0 ${brightness(role.color, 0.35)}` }}
   >
-    <Image src={pfp} height={128} width={128} className="rounded-full" />
-
     <div className="text-xl">
       <h3
         className="mb-4 text-4xl font-semibold"
