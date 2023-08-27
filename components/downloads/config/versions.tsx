@@ -121,6 +121,7 @@ export const versions: Download[] = [
   {
     version: 'v1.2.6',
     name: 'La Resistance',
+    description: 'Quick update that adds items from the Dante event and some other less important things.',
     variants: {
       fl: '/files/v1.2.6/§r§lFurfSky §6§lReborn §8§lFL §8§l[§71.2.6§8§l].zip',
       ov: '/files/v1.2.6/§r§lFurfSky §6§lReborn §8§lOV §8§l[§71.2.6§8§l].zip',
