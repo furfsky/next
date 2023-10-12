@@ -10,6 +10,15 @@ export interface Download {
 }
 export const versions: Download[] = [
   {
+    version: 'v1.7',
+    name: 'Full Bloom',
+    description: 'Garden, Accessories, The Rift and Crimson Isles.',
+    variants: {
+      fl: 'https://cdn.modrinth.com/data/khMbd0K1/versions/BesdsSFC/§aFurfSky%20Reborn%20§8§lFULL§8.zip',
+      ov: 'https://cdn.modrinth.com/data/khMbd0K1/versions/rRc6EBVF/§aFurfSky%20Reborn%20§8§lOVERLAY§8.zip',
+    },
+  },
+  {
     version: 'v1.6.3',
     name: 'More UI Fixes',
     description: 'Additional fixes for issues introduced in the UI rewrite.',
