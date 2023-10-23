@@ -10,7 +10,7 @@ export interface Download {
 }
 export const versions: Download[] = [
   {
-    version: 'v1.7',
+    version: 'v1.7.1',
     name: 'Full Bloom (Patch 1)',
     description: 'Fixes for Full Bloom',
     variants: {
