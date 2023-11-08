@@ -10,6 +10,15 @@ export interface Download {
 }
 export const versions: Download[] = [
   {
+    version: 'v1.7.2',
+    name: 'Full Bloom (Patch 2)',
+    description: 'Even more fixes for Full Bloom',
+    variants: {
+      fl: 'https://cdn.modrinth.com/data/khMbd0K1/versions/sTFEGbL9/§aFurfSky%20Reborn%20§8§lFULL§8.zip',
+      ov: 'https://cdn.modrinth.com/data/khMbd0K1/versions/AFQIVEA2/§aFurfSky%20Reborn%20§8§lOVERLAY§8.zip',
+    },
+  },
+  {
     version: 'v1.7.1',
     name: 'Full Bloom (Patch 1)',
     description: 'Fixes for Full Bloom',
