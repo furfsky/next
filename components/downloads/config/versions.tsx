@@ -9,16 +9,24 @@ export interface Download {
   };
 }
 export const versions: Download[] = [
- {
+  {
+    version: 'v1.8',
+    name: 'Mayor Minery',
+    variants: {
+      fl: 'https://cdn.modrinth.com/data/khMbd0K1/versions/Dzth04ay/%C2%A7a%C2%A7lFurf%C2%A7b%C2%A7lSky%20%C2%A76%C2%A7lReborn%20%C2%A78%C2%A7lFULL.zip',
+      ov: 'https://cdn.modrinth.com/data/khMbd0K1/versions/KVMKyVAM/%C2%A7a%C2%A7lFurf%C2%A7b%C2%A7lSky%20%C2%A76%C2%A7lReborn%20%C2%A78%C2%A7lOVERLAY.zip',
+    },
+  },
+  {
     version: 'v1.7.3.3',
     name: 'Full Bloom (Patch 3.3)',
-    description: 'Fixes head-based items as a result of Hypixel\'s changes.',
+    description: "Fixes head-based items as a result of Hypixel's changes.",
     variants: {
       fl: 'https://cdn.modrinth.com/data/khMbd0K1/versions/fMUYhy5N/§a§lFurf§b§lSky%20§5§lReborn%20§8§lFULL.zip',
       ov: 'https://cdn.modrinth.com/data/khMbd0K1/versions/yinKro9q/§a§lFurf§b§lSky%20§5§lReborn%20§8§lOVERLAY.zip',
     },
- },
- {
+  },
+  {
     version: 'v1.7.3.2',
     name: 'Full Bloom (Patch 3.2)',
     description: 'Even even even more fixes for Full Bloom',
