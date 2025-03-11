@@ -13,6 +13,7 @@ import discordLogo from '../public/logos/social/discord.svg';
 import twitterLogo from '../public/logos/social/twitter.svg';
 import youtubeLogo from '../public/logos/social/youtube.svg';
 import hypixelLogo from '../public/logos/social/hypixel.svg';
+import githubLogo from '../public/logos/social/github.svg';
 import { versions } from '../components/downloads/config/versions';
 import { PageProps } from './_app';
 
@@ -42,12 +43,12 @@ const Home: NextPage<PageProps> = ({ background }) => (
           </a>
         </div>
         <div className="flex flex-row gap-4 p-2 grow">
-          <a href="https://discord.gg/fsr" target="_blank" className="basis-1/4" rel="noreferrer">
+          <a href="https://discord.gg/fsr" target="_blank" className="basis-1/5" rel="noreferrer">
             <Button className="w-full h-full">
               <Image objectFit="contain" src={discordLogo} alt="Discord" height={25} />
             </Button>
           </a>
-          <a href="https://twitter.com/furfskyreborn" target="_blank" className="basis-1/4" rel="noreferrer">
+		  <a href="https://twitter.com/furfskyreborn" target="_blank" className="basis-1/5" rel="noreferrer">
             <Button className="w-full h-full">
               <Image objectFit="contain" src={twitterLogo} alt="Twitter" height={25} />
             </Button>
@@ -55,17 +56,22 @@ const Home: NextPage<PageProps> = ({ background }) => (
           <a
             href="https://www.youtube.com/hellcastleyt"
             target="_blank"
-            className="basis-1/4"
+            className="basis-1/5"
             rel="noreferrer"
           >
             <Button className="w-full h-full">
               <Image objectFit="contain" src={youtubeLogo} alt="YouTube" height={25} />
             </Button>
           </a>
+          <a href="https://github.com/furfsky" target="_blank" className="basis-1/5" rel="noreferrer">
+            <Button className="w-full h-full">
+              <Image objectFit="contain" src={githubLogo} alt="GitHub" height={25} />
+            </Button>
+          </a>
           <a
             href="https://hypixel.net/threads/furfsky-reborn-1-4-1-rosettas-wares.4101579/"
             target="_blank"
-            className="basis-1/4"
+            className="basis-1/5"
             rel="noreferrer"
           >
             <Button className="w-full h-full">
