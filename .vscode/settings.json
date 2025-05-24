@@ -1,0 +1,13 @@
+{
+  "npm.packageManager": "bun",
+  "editor.defaultFormatter": "biomejs.biome",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "cSpell.words": ["Furfsky", "Modrinth", "opentype", "OptiFine"],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
