@@ -78,8 +78,8 @@ export default function Home() {
 
         <nav className="flex w-full flex-col gap-4 md:w-auto md:flex-row" aria-label="Social media links">
           {socials.map(social => (
-            <Button key={social.name} aria-label={`${social.name} Icon`}>
-              {social.icon}
+            <Button key={social.name} aria-label={`${social.name} Icon`} asChild>
+              <Link href={social.url}>{social.icon}</Link>
             </Button>
           ))}
         </nav>
