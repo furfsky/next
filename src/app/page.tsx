@@ -60,13 +60,17 @@ export default function Home() {
           <span className="text-gold-400 [text-shadow:4px_4px_0_#332a00]">1.8.9</span>
         </h2>
 
-        <section className="mb-8 flex w-full flex-col gap-4 md:w-auto md:flex-row">
-          <Button asChild title="Contains SkyBlock items, NEU Skulls, Vanilla Textures and Mod UI">
+        <section className="mb-8 flex w-full flex-col gap-4 md:flex-row">
+          <Button
+            className="w-full md:flex-1"
+            asChild
+            title="Contains SkyBlock items, NEU Skulls, Vanilla Textures and Mod UI"
+          >
             <Link href={downloads.full}>Full Download</Link>
           </Button>
 
           {downloads.overlay && (
-            <Button asChild title="Contains SkyBlock items and NEU Skulls">
+            <Button className="w-full md:flex-1" asChild title="Contains SkyBlock items and NEU Skulls">
               <Link href={downloads.overlay}>Overlay Download</Link>
             </Button>
           )}
@@ -76,9 +80,14 @@ export default function Home() {
           Our Socials (and more)
         </h2>
 
-        <nav className="flex w-full flex-col gap-4 md:w-auto md:flex-row" aria-label="Social media links">
+        <nav className="flex w-full flex-col flex-wrap gap-4 md:flex-row" aria-label="Social media links">
           {socials.map(social => (
-            <Button key={social.name} aria-label={`${social.name} Icon`} asChild>
+            <Button
+              className="w-full md:min-w-[100px] md:flex-1"
+              key={social.name}
+              aria-label={`${social.name} Icon`}
+              asChild
+            >
               <Link href={social.url}>{social.icon}</Link>
             </Button>
           ))}
