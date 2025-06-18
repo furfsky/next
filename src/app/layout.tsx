@@ -42,6 +42,14 @@ export const metadata: Metadata = {
     title: "Furfsky Reborn",
     url: "https://furfsky.net",
     siteName: "Furfsky",
+    images: [
+      {
+        url: "https://furfsky.net/og-image.jpg",
+        alt: "A render displaying the highest tier of the 4 main Crimson Isles armour sets.",
+        width: 4096,
+        height: 2160,
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
