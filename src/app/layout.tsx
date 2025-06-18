@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import fs from "node:fs/promises";
+import path from "node:path";
 import localFont from "next/font/local";
 import Image from "next/image";
 import { Navbar } from "~/components/navbar";
-import { useRandomBackground } from "~/hooks/use-random-background";
 import { cn } from "~/lib/utils";
 
 const minecraftFont = localFont({
@@ -31,8 +32,6 @@ const minecraftFont = localFont({
   ],
 });
 
-export const dynamic = "force-dynamic";
-
 export const metadata: Metadata = {
   title: {
     template: "%s | Furfsky Reborn",
@@ -52,12 +51,17 @@ export const viewport: Viewport = {
   themeColor: "#fbcc6c",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const background = useRandomBackground();
+  const files = await fs
+    .readdir(path.join(process.cwd(), "public", "backgrounds"))
+    .catch(() => [] as string[]);
+
+  const background =
+    files.length > 0 ? `/backgrounds/${files[Math.floor(Math.random() * files.length)]}` : "";
 
   return (
     <html lang="en">
