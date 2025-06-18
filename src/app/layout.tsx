@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Image from "next/image";
@@ -31,11 +31,25 @@ const minecraftFont = localFont({
   ],
 });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: {
     template: "%s | Furfsky Reborn",
     default: "Furfsky Reborn",
   },
+  description: "Hypixel Skyblock's most popular texture pack, texturing almost every item in the game.",
+  openGraph: {
+    title: "Furfsky Reborn",
+    url: "https://furfsky.net",
+    siteName: "Furfsky",
+    locale: "en_US",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#fbcc6c",
 };
 
 export default function RootLayout({
