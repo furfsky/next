@@ -30,29 +30,29 @@ export default function Gallery() {
         </p>
       </Sidebar>
 
-      <Content layout="regular" className="flex flex-col items-center">
+      <Content className="flex flex-col items-center" layout="regular">
         <Image
-          src={`/gallery/${tab}.png`}
           alt="gallery"
-          useMap="#galleryMap"
-          objectFit="cover"
-          width={540}
-          height={519}
           className="relative"
+          height={519}
+          objectFit="cover"
+          src={`/gallery/${tab}.png`}
+          useMap="#galleryMap"
+          width={540}
         />
         <map name="galleryMap">
           {tabs.map(({ name, title, coords }) => (
             <area
-              key={name}
-              title={title}
               alt={`${title} Tab`}
-              shape="rect"
               coords={coords}
               href="#"
-              onClick={e => {
+              key={name}
+              onClick={(e) => {
                 e.preventDefault();
                 setTab(name);
               }}
+              shape="rect"
+              title={title}
             />
           ))}
         </map>

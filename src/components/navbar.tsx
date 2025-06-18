@@ -26,7 +26,7 @@ export const Navbar = () => {
 
           return (
             <li key={path}>
-              <Link href={path} aria-current={isActive || undefined} className={linkClass}>
+              <Link aria-current={isActive || undefined} className={linkClass} href={path}>
                 {label}
               </Link>
             </li>

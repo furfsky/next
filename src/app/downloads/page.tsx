@@ -21,8 +21,8 @@ export default function Downloads() {
       </Sidebar>
 
       <Content layout="regular">
-        {[...releases].reverse().map(release => (
-          <div key={release.version} className="mb-8">
+        {[...releases].reverse().map((release) => (
+          <div className="mb-8" key={release.version}>
             <p className="font-bold text-gold-400 text-xl [text-shadow:4px_4px_0_#332a00]">
               {release.version}
             </p>
@@ -43,7 +43,7 @@ export default function Downloads() {
                   <Link href={release.downloads.overlay}>Overlay Download</Link>
                 </Button>
               ) : (
-                <Button disabled className="w-full xl:w-1/2">
+                <Button className="w-full xl:w-1/2" disabled>
                   Overlay Download
                 </Button>
               )}

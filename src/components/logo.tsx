@@ -4,15 +4,15 @@ export const Logo = () => {
 
   return (
     <video
-      src={source}
-      width={448}
-      height={268}
-      className="w-80"
+      aria-label={isPrideMonth ? "FurfSky Logo (Pride)" : "FurfSky Logo"}
       autoPlay
+      className="w-80"
+      height={268}
       loop
       muted
       playsInline
-      aria-label={isPrideMonth ? "FurfSky Logo (Pride)" : "FurfSky Logo"}
+      src={source}
+      width={448}
     />
   );
 };

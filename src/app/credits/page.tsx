@@ -158,12 +158,12 @@ export default function Credits() {
         <p className="mt-8 text-center text-2xl text-gold-400 [text-shadow:4px_4px_0_#332a00]">Credits</p>
       </Sidebar>
 
-      <Content layout="regular" className="md:px-8">
+      <Content className="md:px-8" layout="regular">
         {Object.entries(roles).map(([roleName, { color, members }]) =>
           members.map(({ name, quote }) => (
             <section
-              key={`${roleName}-${name}`}
               className={cn("inline-block max-w-md p-8 align-top text-white")}
+              key={`${roleName}-${name}`}
               style={{ color, textShadow: `2px 2px 0 ${brightness(color, 0.35)}` }}
             >
               <p className="font-medium text-xl">{roleName}</p>

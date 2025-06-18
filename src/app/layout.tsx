@@ -76,11 +76,11 @@ export default async function RootLayout({
       <body className={cn("bg-pale-700 text-white", minecraftFont.className)}>
         <div className="-z-10 fixed inset-0">
           <Image
-            src={background}
             alt="Background"
-            fill
             className="object-cover opacity-60 blur-xs"
+            fill
             priority
+            src={background}
           />
         </div>
         <Navbar />

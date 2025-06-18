@@ -13,7 +13,7 @@ export function brightness(color: string, factor: number) {
     hex.length === 3
       ? hex
           .split("")
-          .map(c => c + c)
+          .map((c) => c + c)
           .join("")
       : hex;
 

@@ -10,7 +10,6 @@ export const Button = ({ children, className, disabled = false, asChild, ...prop
 
   return (
     <Comp
-      type="button"
       className={cn(
         "inline-flex items-center justify-center border-4 border-black bg-pale-600 text-white text-xl",
         "px-6 py-3 sm:px-8 sm:py-4",
@@ -19,6 +18,7 @@ export const Button = ({ children, className, disabled = false, asChild, ...prop
         disabled && "cursor-not-allowed opacity-85",
         className,
       )}
+      type="button"
       {...props}
     >
       {children}
