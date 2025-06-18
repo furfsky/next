@@ -1,5 +1,3 @@
-// cspell:disable
-
 interface Release {
   title: string;
   version: string;

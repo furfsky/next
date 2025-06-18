@@ -1,5 +1,3 @@
-// cspell:disable
-
 const splashTextCollection: string[] = [
   "Furfsky+ but its reborn",
   "bottem text",

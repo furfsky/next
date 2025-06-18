@@ -1,5 +1,3 @@
-// cspell:disable
-
 import type { Metadata } from "next";
 import { Content } from "~/components/content";
 import { Logo } from "~/components/logo";

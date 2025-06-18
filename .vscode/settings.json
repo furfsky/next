@@ -5,6 +5,5 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "files.associations": {
     "*.css": "tailwindcss"
-  },
-  "cSpell.words": ["biomejs", "Furfsky", "Modrinth", "OptiFine"]
+  }
 }
