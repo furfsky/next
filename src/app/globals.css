@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Minecraft";
+
+  --color-gold-400: #fbcc6c;
+  --color-gold-500: #ffaa00;
+  --color-gold-600: #c87333;
+  --color-gold-700: #441a08;
+  --color-gold-800: #2a2a00;
+
+  --color-lilac-400: #d48af1;
+  --color-lilac-600: #683d8d;
+
+  --color-pale-400: #383838;
+  --color-pale-500: #444a71;
+  --color-pale-600: #2c354d;
+  --color-pale-700: #1c1d30;
+}
