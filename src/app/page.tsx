@@ -47,7 +47,6 @@ export default function Home() {
 
   // biome-ignore lint/style/noNonNullAssertion: temporary workaround
   const latestRelease = releases.at(-1)!;
-  const { downloads } = latestRelease;
 
   return (
     <main>
@@ -58,24 +57,33 @@ export default function Home() {
 
       <Content layout="centered">
         <h2 className="mb-6 text-center font-bold text-4xl [text-shadow:4px_4px_0_#2e2e2e]">
-          Download Latest Version for{" "}
-          <span className="text-gold-400 [text-shadow:4px_4px_0_#332a00]">1.8.9</span>
+          Download Latest Version
         </h2>
 
-        <section className="mb-8 flex w-full flex-col gap-4 md:flex-row">
-          <Button
-            asChild
-            className="w-full md:flex-1"
-            title="Contains SkyBlock items, NEU Skulls, Vanilla Textures and Mod UI"
-          >
-            <Link href={downloads.full}>Full Download</Link>
-          </Button>
+        <section className="w-full mb-8">
+          {Object.entries(latestRelease.downloads).map(([version, downloads]) => (
+            <div className="mb-4 flex w-full flex-col gap-4 md:flex-row" key={version}>
+              <Button
+                asChild
+                className="w-full md:flex-1"
+                title="Contains SkyBlock items, NEU Skulls, Vanilla Textures and Mod UI"
+              >
+                <Link href={downloads.full}>
+                  Full Download (
+                  <span className="text-gold-400 [text-shadow:4px_4px_0_#332a00]">{version}</span>)
+                </Link>
+              </Button>
 
-          {downloads.overlay && (
-            <Button asChild className="w-full md:flex-1" title="Contains SkyBlock items and NEU Skulls">
-              <Link href={downloads.overlay}>Overlay Download</Link>
-            </Button>
-          )}
+              {downloads.overlay && (
+                <Button asChild className="w-full md:flex-1" title="Contains SkyBlock items and NEU Skulls">
+                  <Link href={downloads.overlay}>
+                    Overlay Download (
+                    <span className="text-gold-400 [text-shadow:4px_4px_0_#332a00]">{version}</span>)
+                  </Link>
+                </Button>
+              )}
+            </div>
+          ))}
         </section>
 
         <h2 className="mb-6 text-center font-bold text-3xl [text-shadow:4px_4px_0_#2e2e2e]">
