@@ -357,6 +357,26 @@ export const releases: Release[] = [
       },
     },
   },
+  {
+    title: "New Leaf (Patch 1)",
+    version: "1.9.1",
+    summary: "1.21.5 Support + UI Overhaul + more textures!!",
+    downloads: {
+      "1.21": {
+        full: "https://cdn.modrinth.com/data/khMbd0K1/versions/OITsstM2/%C2%A7aFurf%C2%A7bSky%20%C2%A76Reborn%20%C2%A7f%C2%A7lFULL%C2%A7r%20%C2%A771.21.5%C2%A78.zip",
+        overlay: 
+          "https://cdn.modrinth.com/data/khMbd0K1/versions/9h70KlKF/%C2%A7aFurf%C2%A7bSky%20%C2%A76Reborn%20%C2%A7f%C2%A7lOVERLAY%C2%A7r%20%C2%A771.21.5%C2%A78.zip",
+      },
+      "1.8.9": { 
+        // these are still the 1.9 download links because 1.9.1 isnt on public for 1.8.9 yet and otherwise the website doesnt show 1.8.9
+        full: "https://cdn.modrinth.com/data/khMbd0K1/versions/6e4HNcIG/%C2%A7a%C2%A7lFurf%C2%A7b%C2%A7lSky%20%C2%A76%C2%A7lReborn%20%C2%A78%C2%A7lFULL%201.9%201.8.9.zip",
+        overlay:
+          "https://cdn.modrinth.com/data/khMbd0K1/versions/8nWQDW8h/%C2%A7a%C2%A7lFurf%C2%A7b%C2%A7lSky%20%C2%A76%C2%A7lReborn%20%C2%A78%C2%A7lOVERLAY%201.9%201.8.9.zip",
+      },
+
+    },
+  },
+
 ];
 
 export const splashTextCollection: string[] = [
