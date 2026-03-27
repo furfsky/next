@@ -16,7 +16,11 @@ export default function Downloads() {
       <Sidebar>
         <Logo />
         <p className="mt-8 text-center text-2xl text-gold-400 [text-shadow:4px_4px_0_#332a00]">
-          1.21+ requires Firmament. 1.8.9 requires Optifine.
+          Modern versions require{" "}
+          <a href="https://modrinth.com/mod/catharsis" style={{ textDecoration: "underline" }}>
+            Catharsis
+          </a>{" "}
+          (b.13+)
         </p>
       </Sidebar>
 

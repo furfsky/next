@@ -3,7 +3,7 @@ interface Release {
   version: string;
   summary?: string;
   downloads: {
-    [k: `1.${number}`]: {
+    [k: string]: {
       full: string;
       overlay?: string;
       overlayPlus?: string;
@@ -372,6 +372,16 @@ export const releases: Release[] = [
         full: "https://cdn.modrinth.com/data/khMbd0K1/versions/6e4HNcIG/%C2%A7a%C2%A7lFurf%C2%A7b%C2%A7lSky%20%C2%A76%C2%A7lReborn%20%C2%A78%C2%A7lFULL%201.9%201.8.9.zip",
         overlay:
           "https://cdn.modrinth.com/data/khMbd0K1/versions/8nWQDW8h/%C2%A7a%C2%A7lFurf%C2%A7b%C2%A7lSky%20%C2%A76%C2%A7lReborn%20%C2%A78%C2%A7lOVERLAY%201.9%201.8.9.zip",
+      },
+    },
+  },
+  {
+    title: "Catharsis pre3",
+    version: "2.0 pre3",
+    summary: "Overlays no longer exist, use the in-game configs instead!",
+    downloads: {
+      "Catharsis b.13+": {
+        full: "https://cdn.modrinth.com/data/khMbd0K1/versions/PBwsFNuf/FurfSky%20Reborn.cats.zip",
       },
     },
   },

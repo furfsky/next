@@ -73,15 +73,6 @@ export default function Home() {
                   <span className="text-gold-400 [text-shadow:4px_4px_0_#332a00]">{version}</span>)
                 </Link>
               </Button>
-
-              {downloads.overlay && (
-                <Button asChild className="w-full md:flex-1" title="Contains SkyBlock items and NEU Skulls">
-                  <Link href={downloads.overlay}>
-                    Overlay Download (
-                    <span className="text-gold-400 [text-shadow:4px_4px_0_#332a00]">{version}</span>)
-                  </Link>
-                </Button>
-              )}
             </div>
           ))}
         </section>
